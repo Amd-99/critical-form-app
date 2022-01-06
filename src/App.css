@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background:#F7F7F7;
+}
+#root{
+  background:#F7F7F7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background:#F7F7F7;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form1{
+  background:#FFFFFF  ; 
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+border-radius: 4px;
+margin: 2px;
+height: fit-content;
+}
+input{
+width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form2{
+  background:#FFFFFF ; 
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+border-radius: 4px;
+margin: 2px;
+height: fit-content;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.form3{
+  background:#FFFFFF  ; 
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+border-radius: 4px;
+margin: 2px;
+height: fit-content;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
