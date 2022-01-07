@@ -9,23 +9,15 @@ const TextFieldComp = ({ label, ...props }) => {
   return (
     <>
       <div className="mb-2">
-        <TextField error={errVal} label={label} {...field} {...props} />
+        <TextField error={errVal} label={label} {...field} {...props}   />
         <div style={{ color: "red" }}>
           <ErrorMessage name={field.name} />
         </div>
       </div>
+      
     </>
   );
 };
 
 export default TextFieldComp;
 
-{
-  /* <label htmlFor={field.name}>{label}</label>
- <label htmlFor={field.name}/> 
- <input 
-className='form-control shadow-none' 
-autoComplete='off'
-{...field} 
-{...props}/>   */
-}

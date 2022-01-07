@@ -1,7 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+
 import Modal from '@mui/material/Modal';    
 
 const ModalComp = (props) => {
@@ -13,13 +12,16 @@ const ModalComp = (props) => {
       <Modal
         open={props.openModal}
         onClose={props.handleCloseModal}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+     
+        
       >
      
-      <pre>
+     <Box > 
+     <pre className='text-white bg-black' >
           {props.dataValues}
       </pre>
+  </Box>
+    
         
       
       </Modal>
