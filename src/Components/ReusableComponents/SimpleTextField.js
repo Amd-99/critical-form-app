@@ -1,9 +1,9 @@
 import React from "react";
 import { useField, ErrorMessage ,FastField } from "formik";
-import TextField from "@mui/material/TextField";
-// import { TextField  } from 'formik-mui';
+//import TextField from "@mui/material/TextField";
+import { TextField  } from 'formik-mui';
 
-const TextFieldComp = ({ label, ...props }) => {
+const SimpleTextFieldComp = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
   let errVal = meta.touched && meta.error && "is-invalid" ? true : false;
@@ -14,16 +14,15 @@ const TextFieldComp = ({ label, ...props }) => {
       
           <div className="mb-2">
           {/* <Field name="checkbox" type="checkbox" component={Checkbox} />   */}
-          {/* <FastField name={field.name}> */}
           
-                  <TextField
-              error={errVal}
+          
+                  <FastField
+             
               label={label}
               {...field}
               {...props}
-
-              onBlur={field.onBlur}
              
+           
            />
          
             <div style={{ color: "red" }}>
@@ -38,4 +37,4 @@ const TextFieldComp = ({ label, ...props }) => {
   );
 };
 
-export default TextFieldComp;
+export default SimpleTextFieldComp;
